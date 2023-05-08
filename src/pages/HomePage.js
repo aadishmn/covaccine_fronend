@@ -26,9 +26,12 @@ function HomePage() {
         Authorization: "Bearer my-token",
         "My-Custom-Header": "foobar",
       };
-      const res = await axios.get("http://:8080/api/v1/user/centers", {
-        headers,
-      });
+      const res = await axios.get(
+        "https://long-jade-beanie.cyclic.app/api/v1/user/centers",
+        {
+          headers,
+        }
+      );
 
       if (res.data.success) {
         setCenters([...res.data.data]);
@@ -68,11 +71,14 @@ function HomePage() {
     console.log(isAppointTime);
 
     try {
-      const res = await axios.post("http://:8080/api/v1/user/appointments", {
-        phoneNo: phNo,
-        isAppointTime: isAppointTime,
-        date: date,
-      });
+      const res = await axios.post(
+        "https://long-jade-beanie.cyclic.app/api/v1/user/appointments",
+        {
+          phoneNo: phNo,
+          isAppointTime: isAppointTime,
+          date: date,
+        }
+      );
       if (res.data.success) {
         console.log("Success");
         message.success("Appointment Fixed");
