@@ -68,7 +68,7 @@ function HomePage() {
     console.log(isAppointTime);
 
     try {
-      const res = await axios.post("http://:8080/api/v1/user/appointments", {
+      const res = await axios.post("https://long-jade-beanie.cyclic.app/api/v1/user/appointments", {
         phoneNo: phNo,
         isAppointTime: isAppointTime,
         date: date,
