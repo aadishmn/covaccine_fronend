@@ -11,7 +11,7 @@ const Login = () => {
   const onfinishHandler = async (values) => {
     try {
       const res = await axios.post(
-        "https://long-jade-beanie.cyclic.app/api/v1/user/login",
+        "https://determined-ruby-getup.cyclic.app/api/v1/user/login",
         values
       );
 
