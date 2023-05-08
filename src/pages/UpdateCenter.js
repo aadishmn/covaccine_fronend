@@ -9,7 +9,7 @@ export default async function UpdateCenter(props) {
     const id = props.id;
     console.log(props);
     const res = await axios.post(
-      `https://long-jade-beanie.cyclic.app/api/v1/admin/getCenter/${id}`,
+      `https://determined-ruby-getup.cyclic.app/api/v1/admin/getCenter/${id}`,
       {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
