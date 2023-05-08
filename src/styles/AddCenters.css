@@ -1,0 +1,13 @@
+.form {
+  background-color: rgb(245, 178, 120);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto;
+}
+.formInp {
+  width: 150px;
+}
+.formRow {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}

@@ -1,0 +1,41 @@
+table,
+tr,
+td {
+  border: solid;
+}
+.formTable {
+  background-color: rgb(245, 178, 120);
+  border-color: rgb(245, 178, 120);
+}
+
+table {
+  margin: 20px;
+}
+
+tr {
+  padding: 20px;
+}
+
+.formSearch {
+  /* display: grid; */
+  background-color: rgb(245, 178, 120);
+  /* grid-template-columns: auto auto; */
+}
+
+.formSearch .formInput {
+  width: 200px;
+  margin: 25px;
+  background-color: aliceblue;
+  border: none;
+}
+
+.formInput label {
+  color: brown;
+}
+
+.formSearch .formSearch {
+  background-color: rgb(87, 35, 7);
+  padding: 10px;
+  color: aliceblue;
+  border: none;
+}

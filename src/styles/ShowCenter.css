@@ -1,0 +1,26 @@
+.showData {
+  background-color: bisque;
+  padding: 20px;
+}
+.showData {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+}
+.showDataItems {
+  padding: 20px;
+  background-color: rgb(245, 178, 120);
+}
+
+.showDataItems button {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.centerName {
+  color: rgb(119, 27, 27);
+}
+.showForm {
+  background-color: rgb(245, 178, 120);
+  padding: 20px;
+}

@@ -1,0 +1,14 @@
+.loginForm {
+  background-color: rgb(245, 178, 120);
+}
+
+.loginForm input {
+  background-color: aliceblue;
+}
+
+.loginForm button {
+  background-color: brown;
+}
+.loginForm label {
+  color: aliceblue;
+}
