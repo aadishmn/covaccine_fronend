@@ -8,7 +8,7 @@ const AddCenter = () => {
   const handleFinish = async (values) => {
     try {
       console.log(values.timing[0].format("HH:MM"));
-      const res = await axios.post("https://covaccine.onrender.com/api/v1/admin/addCenter", {
+      const res = await axios.post("https://long-jade-beanie.cyclic.app/api/v1/admin/addCenter", {
         ...values,
 
         timing: [
