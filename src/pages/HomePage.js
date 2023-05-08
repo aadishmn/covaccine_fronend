@@ -26,7 +26,7 @@ function HomePage() {
         Authorization: "Bearer my-token",
         "My-Custom-Header": "foobar",
       };
-      const res = await axios.get("https://long-jade-beanie.cyclic.app/api/v1/user/centers", {
+      const res = await axios.get("https://determined-ruby-getup.cyclic.app/api/v1/user/centers", {
         headers,
       });
 
@@ -68,7 +68,7 @@ function HomePage() {
     console.log(isAppointTime);
 
     try {
-      const res = await axios.post("https://long-jade-beanie.cyclic.app/api/v1/user/appointments", {
+      const res = await axios.post("https://determined-ruby-getup.cyclic.app/api/v1/user/appointments", {
         phoneNo: phNo,
         isAppointTime: isAppointTime,
         date: date,
