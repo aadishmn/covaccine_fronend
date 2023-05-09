@@ -14,9 +14,9 @@ export default function ShowCenter() {
   }, [center, upd]);
   const getCenters = async () => {
     try {
+      const token = localStorage.getItem("token");
       const headers = {
-        Authorization: "Bearer my-token",
-        "My-Custom-Header": "foobar",
+        Authorization: `Bearer ${token}`,
       };
       const res = await axios.get(
         "https://long-jade-beanie.cyclic.app/api/v1/admin/showCenter",
