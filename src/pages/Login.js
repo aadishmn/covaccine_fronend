@@ -11,19 +11,20 @@ const Login = () => {
   const onfinishHandler = async (values) => {
     try {
       const res = await axios.post(
-        "https://determined-ruby-getup.cyclic.app/api/v1/user/login",
+        "https://long-jade-beanie.cyclic.app/api/v1/user/login",
         values
       );
 
       if (res.data.success) {
+        localStorage.setItem("token", res.data.token);
         if (values.email == "admin@admin.com") {
           console.log("Admin");
+          // localStorage.setItem()
           localStorage.setItem("admin", res.data.token);
           console.log(localStorage.getItem("admin"));
           message.success("Login Successfully");
           navigate("/");
         } else {
-          localStorage.setItem("token", res.data.token);
           message.success("Login Successfully");
           navigate("/");
         }
