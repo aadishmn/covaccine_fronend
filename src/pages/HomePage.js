@@ -27,7 +27,7 @@ function HomePage() {
         "My-Custom-Header": "foobar",
       };
       const res = await axios.get(
-        "https://long-jade-beanie.cyclic.app/api/v1/user/centers",
+        "https://determined-ruby-getup.cyclic.app/api/v1/user/centers",
         {
           headers,
         }
@@ -72,7 +72,7 @@ function HomePage() {
 
     try {
       const res = await axios.post(
-        "https://long-jade-beanie.cyclic.app/api/v1/user/appointments",
+        "https://determined-ruby-getup.cyclic.app/api/v1/user/appointments",
         {
           phoneNo: phNo,
           isAppointTime: isAppointTime,

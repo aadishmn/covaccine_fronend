@@ -19,7 +19,7 @@ export default function ShowCenter() {
         Authorization: `Bearer ${token}`,
       };
       const res = await axios.get(
-        "https://long-jade-beanie.cyclic.app/api/v1/admin/showCenter",
+        "https://determined-ruby-getup.cyclic.app/api/v1/admin/showCenter",
         {
           headers,
         }
@@ -39,7 +39,7 @@ export default function ShowCenter() {
     // try {
     //   console.log(id);
     //   const res = await axios.post(
-    //     `https://long-jade-beanie.cyclic.app/api/v1/admin/getCenter/${id}`,
+    //     `https://determined-ruby-getup.cyclic.app/api/v1/admin/getCenter/${id}`,
     //     {
     //       headers: {
     //         Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -58,7 +58,7 @@ export default function ShowCenter() {
   const handleUpdate = async (values) => {
     try {
       const res = await axios.put(
-        "https://long-jade-beanie.cyclic.app/api/v1/admin/putCenter",
+        "https://determined-ruby-getup.cyclic.app/api/v1/admin/putCenter",
         { ...values, _id: updUser },
         {
           headers: {
@@ -79,7 +79,7 @@ export default function ShowCenter() {
 
     try {
       const res = await axios.delete(
-        `https://long-jade-beanie.cyclic.app/api/v1/admin/deleteCenter/${id}`
+        `https://determined-ruby-getup.cyclic.app/api/v1/admin/deleteCenter/${id}`
       );
     } catch (err) {
       console.log(err);

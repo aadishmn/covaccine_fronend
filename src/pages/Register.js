@@ -9,7 +9,7 @@ const Register = () => {
   const onfinishHandler = async (values) => {
     try {
       const res = await axios.post(
-        "https://long-jade-beanie.cyclic.app/api/v1/user/register",
+        "https://determined-ruby-getup.cyclic.app/api/v1/user/register",
         values
       );
       console.log(res);
